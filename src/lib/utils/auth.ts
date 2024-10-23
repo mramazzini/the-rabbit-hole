@@ -19,6 +19,7 @@ export const generateToken = async (id: number) => {
   (await cookies()).set("token", token, {
     maxAge: 60 * 60 * 24 * 7, // 1 week
     httpOnly: true, // prevent client-side access
+    sameSite: "strict", // required for cross-site cookies
   });
 
   return token;

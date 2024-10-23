@@ -11,7 +11,7 @@ const LoginForm = () => {
     const loginRes = await login(password);
     console.log(loginRes);
     if (loginRes) {
-      router.push("/app/editor");
+      router.push("/app/edit");
     } else {
       alert("Incorrect password");
     }
