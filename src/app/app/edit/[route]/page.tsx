@@ -8,7 +8,7 @@ import {
 } from "@/lib/update.actions";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Page() {
   const { route } = useParams();

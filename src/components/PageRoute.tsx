@@ -1,8 +1,6 @@
 "use client";
 
-import { updateRoute } from "@/lib/update.actions";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Fragment, useState } from "react";
 
 const PageRoute = ({
@@ -14,7 +12,6 @@ const PageRoute = ({
 }) => {
   const [loading, setLoading] = useState(false);
   const [newRoute, setNewRoute] = useState("");
-  const router = useRouter();
   return (
     <Fragment>
       <Link

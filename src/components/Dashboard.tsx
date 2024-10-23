@@ -51,7 +51,7 @@ const Dashboard = () => {
         <div>Loading...</div>
       ) : (
         <ul>
-          {pages.map((page, index) => (
+          {pages.map((page) => (
             <li key={page.route}>
               <PageRoute
                 route={page.route}
